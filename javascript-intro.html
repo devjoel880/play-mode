@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+  <h3>Javascript</h3>
+     <p>Replace "Name" with "Joel" with the button below:</p>
+       <button onclick="myFunction()">Replace</button>
+       <button onclick="myFunc()">Revert</button>
+        <p id="demo">Name the Web Developer</p>
+        <p>Use the "Revert" button to revert back to the original content</p>
+          
+ <script>
+    function myFunction() {
+    let text = document.getElementById("demo").innerHTML; 
+    document.getElementById("demo").innerHTML =
+    text.replace("Name","Joel");
+   }
+    // To make the replace method case-insensitive, use an insensitive flaag '(/NAME/i)'
+    // NB: To replace all matches, use a global flag '(/Name/g)'
+
+    function myFunc() {
+    let rev = document.getElementById("demo").innerHTML;
+    document.getElementById("demo").innerHTML = rev.replace("Joel", "Name");
+   }
+  </script>
+  
+  <p id="demo_1"></p>
+  <p id="demo_2"></p>
+  <p id="demo_3"></p>
+  <p id="demo_4"></p>
+  <!--
+    <script>console.log("Hello world")</script>
+    <script>console.log("Welcome to Javascript, Dev Joel")</script>
+
+  <script>
+    let message;
+    message = "Hello";
+
+    console.log(message);
+  </script>
+
+  <script>
+    let user = "John", age = 25, msg = "welcome", msg1 = "you are", msg2 = "years old";
+    let greet;
+    greet = msg + " " + user + ", " + msg1 + " " + age + " " + msg2;
+
+    console.log(greet);
+  </script>
+
+  <script>
+    let $ = 1;
+    let _ = 2;
+    console.log($ + _);
+  </script>
+  <script>
+    const dob = '08/01/2003';
+    console.log(dob);
+  </script>
+  <script>
+    const COLOR_RED = '#f00';    
+    
+    let color = COLOR_RED;
+    console.log(color);
+  </script>
+
+-->
+<!--
+<script>
+  let admin;
+  let name = "John";
+  admin = name;
+
+console.log(admin);  
+alert(admin);
+</script>
+-->
+<!--
+<h4>Javascript Numbers</h4>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+  
+  let numbers = [1,2,3,4,5,6,7,8,9];
+  console.log(numbers[4]);
+  document.getElementById("demo1").innerHTML = numbers[4];
+  let x = 5;
+  let y = Math.pow(x,2);
+  console.log(y);
+  document.getElementById("demo2").innerHTML = y;
+</script>
+-->
+<!--
+<script>
+  let a = NaN;
+  let b = 4;
+  let c = a + b;
+  document.getElementById("demo").innerHTML= isNaN(c);
+  console.log(c);
+</script>
+-->
+<!--
+<script>
+  let myNumber = 2;
+  while (myNumber != Infinity) {
+    myNumber = myNumber * myNumber;
+  }
+  document.getElementById("demo").innerHTML = myNumber;
+  console.log(myNumber);
+</script>
+-->
+<!--
+<script>
+  let x = 2 / 0;
+  console.log(x);
+  document.getElementById("demo").innerHTML = x;
+</script>
+-->
+<!--
+<script>
+  let x = 0xFF;
+  document.getElementById('demo').innerHTML = "0xFF = " + x;
+</script>
+-->
+<!--
+<script>
+  let x = 123, y = new Number(123), z = new Number(123);
+  // cannot compare objects in Javascript, Will return false
+  console.log(y == z);
+</script> 
+-->
+<!--
+<script>
+  // For square root of a number in Javascript
+  alert(16 ** (1/2));
+</script>
+-->
+<!--
+  // PROMPT IN JAVASCRIPT
+<script>
+  let a = +prompt("First number?", 1);
+  let b = +prompt("Second number?", 2);
+  let c = "is the sum";
+  //To avoid the result being a string, add '+' before the variables
+  alert(a + b + " " + c); 
+</script>
+-->
+<!--
+<script>
+  console.log( 23 + 97 );
+</script>
+<script>
+  let a = 1, b = 2, c = 3, d = 4, e = 5, f = 6;
+  console.log(a + b + c + d + e + f);
+</script>
+-->
+<!--
+<script>
+  let x = 4 + 6 + 9;
+  let y = x / 77;
+  console.log(y);
+</script>
+-->
+<!--
+<script>
+  let a = 10;
+  console.log(9 * a);
+</script>
+-->
+<!--
+<script>
+  const MAX = 57;
+  let actual = MAX -13;
+  let percentage = actual / MAX;
+</script>
+-->
+<!--
+<script>
+  const string1 = "JOEL";
+  document.getElementById("demo").innerHTML = string1.charAt(0);
+  document.getElementById("demo_1").innerHTML = string1.charAt(1);
+  document.getElementById("demo_2").innerHTML = string1.charAt(2);
+  document.getElementById("demo_3").innerHTML = string1.charAt(3);
+  document.getElementById("demo_4").innerHTML = string1.charAt(4);
+</script>
+-->
+<!--
+<script>
+  const a = "a";
+  const b = "b";
+  if ( a < b ) {
+    console.log(`${a} is less than ${b}`);
+  } else if ( a > b ) {
+    console.log(`${a} is grater than ${b}`);
+  } else {
+    console.log(`${a} and ${b} are equal.`);
+  }
+</script>
+-->
+<!--
+<script>
+  let a = "dev joel";
+  const b = a.toUpperCase();
+  console.log(b);
+</script>
+-->
+<!--
+<script>
+  let x, y;
+  let text = "Apple, Banana, Kiwi";
+  x = text.slice(7,13);
+  y = text.length; //to show the legth of a string inn JS
+  let z = text.substr(-4); //substring
+  console.log(x.toUpperCase());
+  console.log(y, z);
+</script>
+-->
+<!--
+<script>
+  let a = "Oge";
+  let b = "bunam";
+  let x;
+  x = a.concat("", b);
+  console.log(x);
+</script>
+-->
+<!--
+<script>
+  const hours = 8;
+  const minutes = 3;
+  const meridian = 'AM';
+  const CC = '2036424257891246';
+
+const formattedTime = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')} ${meridian}`;
+// const formattedTime = hours.toString().padStart(2, '0')
+const cc = CC.slice(-4).padStart(CC.length, '*');
+const credit = "Your credit card ending in: ";
+const creditCard = `${credit} : ${cc}`;
+// Outputs: "08:03"
+document.getElementById("demo_1").innerHTML = formattedTime;
+document.getElementById("demo_2").innerHTML = creditCard;
+
+</script>
+-->
+<!--
+  <script>
+  const time = 8;
+  const formattedTime = time.toString();
+  const fmt = formattedTime.padStart(2, '0');
+  document.getElementById("demo_1").innerHTML = fmt;
+</script> -->
+
+
+
+
+
+
+
+</body>
+</html>

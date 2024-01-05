@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="background">
+    <form id="form">
+    <div class="log">
+        <h1>Log in</h1>
+    </div>
+    <div>
+        <div id="role">Select Role:</div>
+        <select name="" id="select">
+            <option value="">--Selct role--</option>
+            <option value="abayomi@nlcc.ng">IT Manager</option>
+            <option value="emeka@nlcc.ng">Deputy IT Manager</option>
+            <option value="jire@nlcc.ng">Support Assistant</option>
+            <option value="Dev-Joel">Intern</option>
+                       
+        </select>
+    </div>
+  <label class="label">Username:</label>
+  <input class="input" id="user" type="text" placeholder="">
+
+  <label class="label">Password:</label>
+  <input class="input" type="password" placeholder="Enter your password...">
+
+  <button class="btn-log" type="submit">Log in</button>
+ </form>
+</div>
+
+
+
+     <script>
+        // storing usernames for the IT role
+
+        const select = document.querySelector("select");
+        
+        select.addEventListener("change", populateUserId);
+
+        function populateUserId() {
+        const choice = select.value;
+
+        if (choice === "abayomi@nlcc.ng") {
+              document.getElementById("user").value = choice;
+        } else if (choice === "emeka@nlcc.ng") {
+            document.getElementById("user").value = choice;      
+        } else if (choice === "jire@nlcc.ng") {
+            document.getElementById("user").value = choice; 
+        } else if (choice === "Dev-Joel") {
+            document.getElementById("user").value = choice;   
+        } else {
+            document.getElementById("user").value = "";
+        }
+      }
+
+ 
+     </script>
+
+
+</body>
+</html>
