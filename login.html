@@ -29,7 +29,7 @@
   <label class="label">Password:</label>
   <input class="input" type="password" placeholder="Enter your password...">
 
-  <button class="btn-log" type="submit">Log in</button>
+  <button class="btn-log" onclick="show()" type="submit">Log in</button>
  </form>
 </div>
 
@@ -45,18 +45,34 @@
         function populateUserId() {
         const choice = select.value;
 
-        if (choice === "abayomi@nlcc.ng") {
-              document.getElementById("user").value = choice;
-        } else if (choice === "emeka@nlcc.ng") {
-            document.getElementById("user").value = choice;      
-        } else if (choice === "jire@nlcc.ng") {
-            document.getElementById("user").value = choice; 
-        } else if (choice === "Dev-Joel") {
-            document.getElementById("user").value = choice;   
-        } else {
+        switch(choice) {
+            case "abayomi@nlcc.ng": 
+            document.getElementById("user").value = choice;
+            break;
+
+            case "emeka@nlcc.ng": 
+            document.getElementById("user").value = choice;
+            break;
+
+            case "jire@nlcc.ng": 
+            document.getElementById("user").value = choice;
+            break;
+
+            case "Dev-Joel": 
+            document.getElementById("user").value = choice;
+            break;
+
+            default: 
             document.getElementById("user").value = "";
+
         }
+
       }
+
+      function show() {
+            alert("Page under construction, Please contact your administrator.");
+        }
+
 
  
      </script>
